@@ -1,0 +1,140 @@
+body {
+    font-family: Roboto, -apple-system, BlinkMacSystemFont, 'Segoe UI', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 28px;
+}
+.header {
+    background-color: #007765;
+    text-align: center;
+}
+.nomove {/* закрепляем хедер */
+    position: sticky;
+    top: 0;
+}
+.text-block {
+    box-sizing: border-box;
+    max-width: 1219px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 55px;
+    padding-right: 55px;
+}
+.menu  { /* класс меню */
+    color: white;
+}
+.logo {
+    float: left; /* флоат для того чтобы разместить лого и меню в одну строку на одном уровне*/
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-top: 10px;
+}
+.link { /* сами ссылки меню */
+/*    clear: both;*/
+    display: inline-block; /* меню в одну строку */
+    padding-bottom: 20px;
+    padding-top: 10px;
+    font-size: 25px;
+}
+.pipernet {
+    background: url("image.png") center no-repeat;
+    font-family: sans-serif;
+    color: white;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+    background-size: cover; /*сохраняем пропорции*/
+    background-position: center center;
+}
+.section-problem {
+    background-color: #EEEEEE;
+}
+.section-problem > .text-block {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.section-blue {
+    background: url("image1.png") center no-repeat;
+    background-size: cover; /*сохраняем пропорции*/
+    background-position: center center;
+    padding-top: 128px;
+    padding-bottom: 128px;
+}
+.text-block-blue {
+    font-family: Roboto, sans-serif;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 56px;
+    text-align: center;
+    color: #fff;
+}
+a:visited { /* всі посилання робимо білими */
+    color: white;
+}
+a {
+    color: white;
+    text-decoration: none;
+}
+h1 {
+    font-size: 64px;
+    color: white;
+    font-family: Roboto, -apple-system, BlinkMacSystemFont, 'Segoe UI', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+}
+h2 {
+    font-size: 54px;
+    color: #007765;
+    font-family: sans-serif;
+    text-align: center;
+}
+.section-introducing {
+    background-color: #FFFFFF;
+}
+.ppc-logo {
+    float: left;
+}
+.team {
+    background-color: #EEEEEE;
+}
+.text-block-team {/* размещаем в 2 ряда фото команды */
+    display: flex; 
+    flex-wrap: wrap;
+}
+.text-block-team > figure { /* ровняем фото внутри фигуры */
+    margin-left: 9%;
+    text-align: center;
+}
+/*чтобы выровнять каждую фотку внутри 
+    фигуры относительно друг друга по тегу имг (внутри имг)*/
+.text-block-team > figure > img {
+    padding: 20px 20px 20px 20px; 
+}
+.first-name { /* для имени члена команды*/
+    color: #007765;
+    font-size: 23px;
+    font-weight: bold;
+}
+.job-title { /* для должности */
+    font-size: 18px;
+    font-style: italic;
+}
+.block-footer { /* Для футера */
+    background-color: #333333;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 20px;
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    /*position: absolute;*/
+}
+#anchor3 {
+    padding-top: 20px;
+}
+@media screen and (max-width: 600px) { 
+    .text-block-team > figure {
+        margin-left: 30px; /* ровняем фото внутри фигуры */
+        margin-right: 30px;
+        text-align: center;
+    }
+}
