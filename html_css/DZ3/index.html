@@ -24,19 +24,39 @@
     border-bottom - нижняя граница,
     shadow-sm - тень и ее размер -->
   <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-5 mb-3 bg-white border-bottom shadow-sm">
-    <h5 class="my-0 mr-md-auto font-weight-normal"><span class="pr-1 font-weight-bold">UBER</span> <span class="text-success">EATS</span></h5>
+    <h1 class="my-0 mr-md-auto font-weight-normal"><span class="pr-1 font-weight-bold"><small>UBER</span> <span class="font-weight-bold text-success">EATS</small></span></h1>
     <nav class="my-2 my-md-0 mr-md-3">
-      <a class="p-2 text-dark" href="#">Features</a>
-      <a class="p-2 text-dark" href="#">Enterprise</a>
-      <a class="p-2 text-dark" href="#">Support</a>
-      <a class="p-2 text-dark" href="#">Pricing</a>
+      <a class="p-2 text-dark" href="#" id="a-link">Рестораны</a>
+      <a class="p-2 text-dark" href="#" id="a-link">Кафе</a>
+      <a class="p-2 text-dark" href="#" id="a-link">Закусочные</a>
+      <a class="p-2 text-dark" href="#" id="a-link">Рецепты</a>
     </nav>
-    <a class="btn p-2 btn-outline-dark text-monospace mr-4" href="#">Войти</a>
-    <a href="#"><img src="img/food_basket.png" alt="" style="width: 30px;"></a>
+      <div> <!-- div для того чтобы сделать кнопку и корзину одним блоком, 
+        чтобы было легче управлять этим блоком-->
+        <a class="btn p-2 btn-outline-dark mr-4" href="#">Войти</a>
+        <a href="#"><img src="img/food_basket.png" alt="" style="width: 30px;"></a>
+      </div>
+      <!-- ниже если понадобится корзину разместить под кнопкой -->
+      <!--<a class="btn p-2 btn-outline-dark text-monospace mr-4" href="#">Войти</a>
+      <a href="#"><img class="mt-xs-3 mt-sm-3 mt-md-0 mr-sm-3 mr-xs-3 mr-md-0" src="img/food_basket.png" alt="" style="width: 30px;"></a>
+      -->
   </div>
-  
-  <div>
-    dfgd dsfg dsfg sdf hdshf
+    <div class="mt-5 ml-5 mr-5 ">
+      <input type="text" class="form-control shadow-sm border-top-0 border-left-0 border-right-0" id="string-search" placeholder="Поиск ресторанов, кафе, закусочных">
+    </div>
+  <div class="container-fluid mt-3">
+    <h2 class="display-5">Рестораны Киева</h2>
+  </div>
+  <br>
+  <div class="container-fluid">
+    <div class="card" style="width:400px">
+      <img class="card-img-top" src="img/mcdonalds.png" alt="McDonalds" style="width:100%">
+      <div class="card-body">
+        <h4 class="card-title">John CSS</h4>
+        <p class="card-text">Some example text some example text. John CSS is an architect and engineer</p>
+        <!--<a href="#" class="btn btn-primary">See Profile</a>-->
+      </div>
+    </div>
   </div>
   
 
