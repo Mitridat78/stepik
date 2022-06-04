@@ -24,7 +24,7 @@
     border-bottom - нижняя граница,
     shadow-sm - тень и ее размер -->
   <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-5 mb-3 bg-white border-bottom shadow-sm">
-    <h1 class="my-0 mr-md-auto font-weight-normal"><span class="pr-1 font-weight-bold"><small>UBER</span> <span class="font-weight-bold text-success">EATS</small></span></h1>
+    <h1 class="my-0 mr-md-auto font-weight-normal"><span class="pr-1 font-weight-bold"><small>UBER</span> <span class="text-success">EATS</small></span></h1>
     <nav class="my-2 my-md-0 mr-md-3">
       <a class="p-2 text-dark" href="#" id="a-link">Рестораны</a>
       <a class="p-2 text-dark" href="#" id="a-link">Кафе</a>
@@ -128,36 +128,64 @@
         </div><!-- end class card -->
       </div> <!-- end class column -->
     </div> <!-- end class row -->
-    
-    <footer class="border-top ml-0 mr-0 ml-xl-5 mr-xl-5 ml-lg-5 mr-lg-5">
+  </div> <!-- end class container-fluid -->  
+
+    <footer class="text-white border-top" style="background-color: #262626;"><!-- ml-0 mr-0 ml-xl-5 mr-xl-5 ml-lg-5 mr-lg-5">-->
       <!-- div for footer -->
-      <div class="row">
-        <div class="col-xl-4 col-lg-4 col-md-6">
-          kdfskdj sdkfj l lsfjls sldkfjsgjnsn srgskn
-        </div> <!-- end div column -->
+      <div class="container-fluid">
+        <div class="row ml-5 mb-5">
+          <div class="col-sm-12 col-md-6 col-lg-4">
+            <ul class="list-unstyled mt-5">
+              <li> 
+                <h3>
+                  <span class="font-weight-bold mr-1 text-monospace" >UBER</span> 
+                  <span class="text-success text-monospace">EATS</span>
+                </h3>
+              </li>
+            </ul>
+          </div>
+        </div>  
+        <hr style="border: 1px solid #FFFFFF; text-align: center;"/>
+        <div class="row ml-5 mb-5">
+          <div class="col-sm-12 col-md-6 col-lg-4">
+            <ul class="list-unstyled mt-5 mb-5">
+              <li class="mb-3">
+                <div class="form-group">
+                  <!--<label for="sel1">Select list (select one):</label>-->
+                  <select style="width:30%;" class="form-control bg-dark text-white" id="sel1" name="sellist1">
+                    <option>Українська</option>
+                    <option>Русский</option>
+                    <option>Английский</option>
+                  </select>
+                </div> <!-- end div form-group -->
+              </li>
+              <li class="mt-5 mb-3" style="font-size: 18px;"><span class="text-success">#</span>UberEats</li>
+              <li>Станьте парнёром-рестораном</li>
+            </ul>
+          </div> <!-- end div column -->
 
-        <div class="col-xl-4 col-lg-4 col-md-6">
-          <ul>
-           <li>Об UberEats</li>
-            <li>Станьте партнёром по доставке</li>
-            <li>Станьте парнёром-рестораном</li>
-          </ul>
-        </div> <!-- end div column -->
+          <div class="col-sm-12 col-md-6 col-lg-4">
+            <ul class="list-unstyled mt-5 mb-5">
+              <li class="mb-3">Об UberEats</li>
+              <li class="mb-3">Станьте партнёром по доставке</li>
+              <li>Станьте парнёром-рестораном</li>
+            </ul>
+          </div> <!-- end div column -->
 
-        <div class="col-xl-4 col-lg-4 col-md-6">
-          <ul>
-           <li>Все города</li>
-            <li>Цены</li>
-            <li>Помощь</li>
-            <li>FAQs</li>
-          </ul>
-        </div> <!-- end div column -->
+          <div class="col-sm-12 col-md-6 col-lg-4">
+            <ul class="list-unstyled mt-5 mb-5">
+              <li class="mb-3">Все города</li>
+              <li class="mb-3">Цены</li>
+              <li class="mb-3">Помощь</li>
+              <li>FAQs</li>
+            </ul>
+          </div> <!-- end div column -->
 
-      </div> <!-- end div row for footer -->
-
+        </div> <!-- end div row for footer -->
+      </div> <!-- end div container fluid -->
 
     </footer>  
-  </div> <!-- end class container-fluid -->
+<!--  </div>--> <!-- end class container-fluid -->
   
   <!-- скрипт бутстрапа -->       
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
