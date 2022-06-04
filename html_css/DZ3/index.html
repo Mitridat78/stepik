@@ -63,7 +63,8 @@
     </div>
     <br>
     <!-- первый ряд -->
-    <div class="row ml-5 mb-5">
+    <!--<div class="row ml-5 mb-5">-->
+    <div class="row mb-5 mt-3 ml-0 mr-0 ml-xl-5 mr-xl-5 ml-lg-5 mr-lg-5">
       <div class="col-sm-12 col-md-6 col-lg-4">
         <div class="card mt-3" style="width:400px">
           <img class="card-img-top" src="img/mcdonalds.png" alt="McDonalds" style="width:100%">
@@ -136,26 +137,23 @@
     <footer class="text-white border-top" style="background-color: #262626;"><!-- ml-0 mr-0 ml-xl-5 mr-xl-5 ml-lg-5 mr-lg-5">-->
       <!-- div for footer -->
       <div class="container-fluid">
-        <div class="row ml-5 mb-4">
+        <div class="row mb-5 mt-3 ml-0 mr-0 ml-xl-5 mr-xl-5 ml-lg-5 mr-lg-5">
           <div class="col-sm-12 col-md-6 col-lg-4">
             <ul class="list-unstyled mt-5">
               <li> 
                 <img src="img/white-logo.svg" alt="">
-              <!--  <h3>
-                  <span class="font-weight-bold mr-1 text-monospace" >UBER</span> 
-                  <span class="text-success text-monospace">EATS</span>
-                </h3>-->
               </li>
             </ul>
-          </div>
-        </div>  
-        <hr style="border: 1px solid #FFFFFF; text-align: center; width: 92%;"/>
-        <div class="row ml-5 mb-5 mt-5">
-          <div class="col-sm-12 col-md-6 col-lg-4">
+          </div> <!-- end div column -->
+        </div>  <!-- end div row -->
+        
+        <!-- первая линия -->
+        <hr class="ml-0 mr-0 ml-md-3 mr-md-3 ml-lg-5 mr-lg-5" style="border: 1px solid #FFFFFF; width: 92%;"/>
+        <div class="row mb-5 mt-5 ml-0 mr-0 ml-xl-5 mr-xl-5 ml-lg-5 mr-lg-5"> <!--ml-5 mb-2 mt-5">-->
+          <div class="col-sm-12 col-md-4 col-lg-4">
             <ul class="list-unstyled mb-5">
               <li class="mb-3">
                 <div class="form-group">
-                  <!--<label for="sel1">Select list (select one):</label>-->
                   <select style="width:50%;" class="form-control bg-dark text-white" id="sel1" name="sellist1">
                     <option>Українська</option>
                     <option>Русский</option>
@@ -172,7 +170,7 @@
             </ul>
           </div> <!-- end div column -->
 
-          <div class="col-sm-12 col-md-6 col-lg-4">
+          <div class="col-sm-12 col-md-4 col-lg-4">
             <ul class="list-unstyled mb-5">
               <li class="mb-4">Об UberEats</li>
               <li class="mb-4">Станьте партнёром по доставке</li>
@@ -180,20 +178,49 @@
             </ul>
           </div> <!-- end div column -->
 
-          <div class="col-sm-12 col-md-6 col-lg-4">
-            <ul class="list-unstyled mb-5">
+          <div class="col-sm-12 col-md-4 col-lg-4">
+            <ul class="list-unstyled mb-5 ml-md-5 ml-lg-0">
               <li class="mb-4">Все города</li>
               <li class="mb-4">Цены</li>
               <li class="mb-4">Помощь</li>
               <li>FAQs</li>
             </ul>
           </div> <!-- end div column -->
-
         </div> <!-- end div row for footer -->
+        
+        <!-- вторая горизонтальная лииня, значки гугл плая и аппстора -->
+        <hr style="border: 1px solid #FFFFFF; width: 92%;"/>
+        <div class="row ml-5 mb-2 mx-auto"> <!-- mx-auto для правой и левой границы -->
+          <div class="col-sm-12 col-md-12 col-lg-12">
+            <div class="text-center mb-3 mt-3">
+              <img src="img/App_Store.png" alt="">
+              <img src="img/Google_Play.png" alt="">
+            </div>
+          </div> <!-- end div column -->
+        </div>  <!-- end div row -->
+        
+        <!-- третья горизонтальная лииня -->
+        <hr style="border: 1px solid #FFFFFF; width: 92%;"/>
+        <div class="row mb-5 mt-5 ml-0 mr-0 ml-xl-5 mr-xl-5 ml-lg-5 mr-lg-5">
+          <div class="col-sm-12 col-md-4 col-lg-4">
+            <div class="mb-5">
+              <span>© 2017 Uber Technologies Inc.</span>
+            </div>
+          </div> <!-- end div column -->
+          <div class="col-sm-12 col-md-4 col-lg-4">
+            <div class="mb-5">
+              <span>Обработка персональных данных</span>
+            </div>
+          </div> <!-- end div column -->
+          <div class="col-sm-12 col-md-4 col-lg-4">
+            <div class="mb-5">
+              <span>Пользовательское соглашение</span>
+            </div>
+          </div> <!-- end div column -->
+        </div>  <!-- end div row -->
       </div> <!-- end div container fluid -->
 
     </footer>  
-<!--  </div>--> <!-- end class container-fluid -->
   
   <!-- скрипт бутстрапа -->       
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
