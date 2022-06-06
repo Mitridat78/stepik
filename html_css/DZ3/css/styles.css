@@ -11,3 +11,8 @@
     text-decoration: none;
     color: black;
 }
+.my-hover:hover, .my-hover:active, .my-hover:visited {
+    text-decoration: none;
+    color: black;
+    background: red;
+}
