@@ -6,13 +6,21 @@
 .p-card-title {
     font-size: 18px;
 }
+#bottom-link:visited {
+    text-decoration: none;
+    color: black;
+}
+#bottom-link:hover, #bottom-link:focus {
+    text-decoration: none;
+    color: green;
+}
 .hover-link:hover, .hover-link:active, .hover-link:visited {
     border: 1px solid rgb(206, 202, 202);
     text-decoration: none;
     color: black;
 }
-.my-hover:hover, .my-hover:active, .my-hover:visited {
-    text-decoration: none;
-    color: black;
-    background: red;
+.main-img {
+    background-size: cover;
+    /*сохраняем пропорции*/
+    background-position: center center;
 }
