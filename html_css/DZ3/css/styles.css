@@ -24,3 +24,8 @@
     /*сохраняем пропорции*/
     background-position: center center;
 }
+.upss {
+    font-size: 90px;
+    text-align: center;
+    padding-top: 10%;
+}
