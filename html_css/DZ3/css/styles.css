@@ -14,6 +14,10 @@
     text-decoration: none;
     color: green;
 }
+.footer-link:hover, .footer-link:active, .footer-link:visited {
+    text-decoration: none;
+    color: white;
+}
 .hover-link:hover, .hover-link:active, .hover-link:visited {
     border: 1px solid rgb(206, 202, 202);
     text-decoration: none;
@@ -23,9 +27,4 @@
     background-size: cover;
     /*сохраняем пропорции*/
     background-position: center center;
-}
-.upss {
-    font-size: 90px;
-    text-align: center;
-    padding-top: 10%;
 }
