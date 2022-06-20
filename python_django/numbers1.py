@@ -22,17 +22,17 @@ else:
 old_num = input()
 
 if int(old_num) > 0:
-    new_num = old_num[::-1]
+    new_num = old_num[::-1] # разворачиваем список в обратном порядке
     if (-2)**31 <= int(new_num) <= (2**31) - 1:
         print(int(new_num))
     else:
         print(0)
 elif int(old_num) == 0:
     print(0)
-else:
+else: #если меньше 0
     new_num = 0
-    new_num = old_num[len(old_num)-1:0:-1]
-    new_num=int(new_num)*(-1)
+    new_num = old_num[len(old_num)-1:0:-1] # разворачиваем список в обратном порядке и отбрасываем знак минус
+    new_num=int(new_num)*(-1) # возвращаем знак минус числу
     if (-2)**31 <= int(new_num) <= (2**31) - 1:
         print(int(new_num))
     else:
