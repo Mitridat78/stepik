@@ -1,10 +1,10 @@
 /* styles for blog */
 body {
   font-size: 18px;
-  margin-bottom: 60px;
+  margin-bottom: 60px; /* for footer */
 }
 html {
-  position: relative;
+  position: relative; /* for footer*/
   min-height: 100%;
 }
 footer {
@@ -21,4 +21,15 @@ footer {
 }
 .my-color-card-footer {
   background-color: chocolate;
+}
+.my-color-card-body {
+  background-color: rgb(250, 234, 209);
+}
+.my-link-menu, .my-link-menu:visited, .my-link-menu:focus, .my-link-menu:active, .my-link-menu:hover {
+  text-decoration: none;
+  color: black;
+}
+.my-link-pagination, .my-link-pagination:visited, .my-link-pagination:focus, .my-link-pagination:active, .my-link-pagination:hover {
+  text-decoration: none;
+  color: chocolate;
 }
