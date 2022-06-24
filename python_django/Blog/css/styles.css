@@ -3,6 +3,12 @@ body {
   font-size: 18px;
   margin-bottom: 60px; /* for footer */
 }
+h1 {
+  margin-top: 0;
+}
+.img-article {
+  width: 100%;
+}
 html {
   position: relative; /* for footer*/
   min-height: 100%;
