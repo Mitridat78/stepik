@@ -42,22 +42,22 @@
     </header>
 
     
-    <div class="container">
+    <div class="container bg-light">
         
-        <nav aria-label="breadcrumb" class="bg-light py-2"> <!-- хлебные крошки -->
+        <nav aria-label="breadcrumb" class="py-2"> <!-- хлебные крошки -->
             <ol class="breadcrumb">
               <li class="breadcrumb-item"><a href="#">Главная</a></li>
               <li class="breadcrumb-item active" aria-current="page">Пост №1</li>
             </ol>
         </nav>
         
-        <div class="row my-3">
-            <div class="col-md-8"> <!-- тело статьи/поста, левая колонка -->
+        <div class="row my-3 gx-3 justify-content-around">
+            <div class="col-lg-8"> <!-- тело статьи/поста, левая колонка -->
                 
                 <h1>Заголовок поста/статьи</h1>
                 <img src="./img/taksa1.jpg" class="img-article" alt="">
-                <p>Это Текст статьи Это Текст статьи Это Текст статьи Это Текст статьи 
-                      Это Текст статьи Это Текст статьи Это Текст статьи Это Текст статьи 
+                <p>Это Текст статьи Это Текст статьи Это Текст статьи Это Текст статьи
+                    Это Текст статьи Это Текст статьи Это Текст статьи Это Текст статьи 
                       Это Текст статьи Это Текст статьи Это Текст статьи Это Текст статьи 
                       Это Текст статьи Это Текст статьи Это Текст статьи Это Текст статьи 
                       Это Текст статьи Это Текст статьи Это Текст статьи Это Текст статьи 
@@ -70,7 +70,7 @@
                           Это Текст статьи Это Текст статьи Это Текст статьи Это Текст статьи 
                           Это Текст статьи Это Текст статьи Это Текст статьи Это Текст статьи 
                           Это Текст статьи Это Текст статьи Это Текст статьи </p>    
-                <h2>Подзаголовок статьи</h2>
+                <h2 class="fs-3">Подзаголовок статьи</h2>
                 <p>Это Текст статьи Это Текст статьи Это Текст статьи Это Текст статьи 
                               Это Текст статьи Это Текст статьи Это Текст статьи Это Текст статьи 
                               Это Текст статьи Это Текст статьи Это Текст статьи Это Текст статьи 
@@ -86,19 +86,22 @@
                                   Это Текст статьи Это Текст статьи Это Текст статьи Это Текст статьи 
                                   Это Текст статьи Это Текст статьи Это Текст статьи </p>
                 <hr>
-                <p class="lead text-end">Автор:<a class="my-link-menu" href="#"> Вася пупкин</a></p>
+                <div class="d-flex flex-sm-row flex-column px-2">
+                    <div class="flex-fill small">Автор:<a class="my-link-menu" href="#"> Вася пупкин</a></div>
+                    <div class="flex-fill small text-sm-end text-start"> Дата публикации 20.06.2022</div>
+                </div>
                 <hr>
-                <div class="text-end">Опубликовано 20.06.2022</div>
+<!--                <div class="text-end">Опубликовано 20.06.2022</div>-->
 
                 <div class="card mt-5">
                     <div class="card-header">
-                      Оставить комментарий
+                    Оставить комментарий
                     </div>
                     <div class="card-body">
                       <h5 class="card-title">Прокомментировать могут только зарегистрированные пользователи</h5>
                       <div class="form-floating mb-3">
                         <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
-                        <label for="floatingTextarea2">Comments</label>
+                        <label for="floatingTextarea2">Комментарии...</label>
                       </div>
                       <a href="#" class="btn btn-dark">Отправить</a>
                     </div>
@@ -112,15 +115,16 @@
                         <h5>Имя пользователя</h5>
                       Текст комментария к статье Текст комментария к статье Текст комментария к статье Текст комментария к статье
                     </div>
-                  </div>    
-            </div> <!-- end div col -->
+                </div>    
+            </div> <!-- end div col left side -->
 
-            <div class="col-md-4"> <!-- правая сторона -->
-                <div class="card text-dark bg-light mb-3 mt-3" style="max-width: 20rem;">
-                    <div class="card-header">Теги</div>
-                    <div class="card-body">
+<!-- правая сторона -->
+            <div class="col-lg-3 ms-md-3"> 
+                <div class="card text-dark bg-light mb-3 mt-3">
+                    <div class="card-header my-color-card-footer fw-bolder">Теги</div>
+                    <div class="card-body my-color-card-body">
                         <div class="d-flex">
-                            <div class="flex-fill">
+                            <div class="flex-fill ">
                                 <ul class="list-unstyled">
                                     <li>Собаки</li>
                                     <li>Мини такса</li>
@@ -136,9 +140,40 @@
                             </div>
 
                         </div> <!-- end div d-flex -->
+                    </div> <!-- card body -->
+                    
+                </div> <!-- end div card -->
+                <div class="card text-dark bg-light mb-3">
+                    <div class="card-header my-color-card-footer fw-bolder">Последние статьи</div>
+                    <div class="card-body my-color-card-body">
+                        <h3 class="card-title fs-5">Заголовок первой статьи</h3>
+                        <p class="card-text small">Краткое описание статьи. Можно использовать первый абзац или значение description</p>
+                        <a href="#" class="card-link">Ссылка на статью</a>
                     </div>
-                  </div>
-            </div>
+                    <div class="card-body my-color-card-body">
+                        <h3 class="card-title fs-5">Заголовок второй статьи</h3>
+                        <p class="card-text small">Краткое описание статьи. Можно использовать первый абзац или значение description</p>
+                        <a href="#" class="card-link">Ссылка на статью</a>
+                    </div>
+                    <div class="card-body my-color-card-body">
+                        <h3 class="card-title fs-5">Заголовок третьей статьи</h3>
+                        <p class="card-text small">Краткое описание статьи. Можно использовать первый абзац или значение description</p>
+                        <a href="#" class="card-link">Ссылка на статью</a>
+                    </div>
+                    <div class="card-body my-color-card-body">
+                        <h3 class="card-title fs-5">Заголовок четвертой статьи</h3>
+                        <p class="card-text small">Краткое описание статьи. Можно использовать первый абзац или значение description</p>
+                        <a href="#" class="card-link">Ссылка на статью</a>
+                    </div>
+                    <div class="card-body my-color-card-body">
+                        <h3 class="card-title fs-5">Заголовок пятой статьи</h3>
+                        <p class="card-text small">Краткое описание статьи. Можно использовать первый абзац или значение description</p>
+                        <a href="#" class="card-link">Ссылка на статью</a>
+                    </div>
+                </div>
+                
+            </div> <!-- end div col right side -->
+            
         </div><!-- end div row -->
     </div> <!-- end div container -->
     
