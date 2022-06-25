@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/normilize.css" />
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="stylesheet" href="css/all.css" />
-    <title>Контакты</title>
+    <title>Регистрация</title>
 </head>
 <body>
     <header>
@@ -47,33 +47,25 @@
         <nav aria-label="breadcrumb" class="py-2"> <!-- хлебные крошки -->
             <ol class="breadcrumb">
               <li class="breadcrumb-item"><a href="#">Главная</a></li>
-              <li class="breadcrumb-item active" aria-current="page">Контакты</li>
+              <li class="breadcrumb-item active" aria-current="page">Регистрация</li>
             </ol>
         </nav>
         
     </div> <!-- end div container -->
 
     <div class="container bg-light pb-3 shadow-sm">
-        <h1>Связаться со мной</h1>
-        <form class="row g-3">
+        <h1>Регистрация</h1>
+        <form class="row">
             <div class="col-md-6">
                 <label for="inputEmail4" class="form-label">Имя</label>
                 <input type="name" class="form-control" id="inputEmail4">
-            </div>
-            <div class="col-md-6">
-                <label for="inputPassword4" class="form-label">Почта</label>
-                <input type="email" class="form-control" id="inputPassword4">
-            </div>
-            <div class="col-12">
-                <label for="inputAddress" class="form-label">Тема</label>
-                <input type="text" class="form-control" id="inputAddress" placeholder="">
-            </div>
-            <div class="col-12">
-                <label for="floatingTextarea2">Текст сообщения</label>
-                <textarea class="form-control" placeholder="" id="floatingTextarea2" style="height: 100px"></textarea>
-            </div> 
-            <div class="d-grid d-md-block">
-                <button type="submit" class="btn btn-dark">Отправить</button>
+                <label for="inputPassword4" class="form-label">Пароль</label>
+                <input type="password" class="form-control" id="inputPassword4">
+                <label for="inputAddress" class="form-label">Повторить пароль</label>
+                <input type="password" class="form-control" id="inputAddress" placeholder="">
+                <div class="d-grid d-md-block mt-3">
+                    <button type="submit" class="btn btn-dark">Зарегистрироваться</button>
+                </div>
             </div>
         </form>
     </div>
