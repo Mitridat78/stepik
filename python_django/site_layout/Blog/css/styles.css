@@ -1,0 +1,41 @@
+/* styles for blog */
+body {
+  font-size: 18px;
+  margin-bottom: 60px; /* for footer */
+}
+h1 {
+  margin-top: 0;
+}
+.img-article {
+  width: 100%;
+}
+html {
+  position: relative; /* for footer*/
+  min-height: 100%;
+}
+footer {
+  position: absolute;
+  /*bottom: 0;*/
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+  /*background-color: #f5f5f5*/
+  background-color: rgb(250, 234, 209);
+}
+.my-color {
+  background-color: rgb(250, 234, 209);
+}
+.my-color-card-footer {
+  background-color: rgb(213, 131, 73);
+}
+.my-color-card-body {
+  background-color: rgb(250, 234, 209);
+}
+.my-link-menu, .my-link-menu:visited, .my-link-menu:focus, .my-link-menu:active, .my-link-menu:hover {
+  text-decoration: none;
+  color: black;
+}
+.my-link-pagination, .my-link-pagination:visited, .my-link-pagination:focus, .my-link-pagination:active, .my-link-pagination:hover {
+  text-decoration: none;
+  color: chocolate;
+}
