@@ -1,10 +1,141 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Привет</title>
-</head>
-<body>
-    <h1>Ну вот мы вроде все настроили и запустили</h1>
-</body>
-</html>
+{% extends './base.html' %}
+
+{% block title %}Блог{% endblock %}
+
+{% block header %}
+    {% include './block/slider.html' %}
+{% endblock %}
+
+{% block content %}
+<div class="container bg-light">
+    <div class="row my-3 justify-content-md-between justify-content-center">
+      <div class="col-lg-3 col-md-5 mb-4 mx-3">
+        <div class="card h-100 shadow-sm">
+          <img src="./img/taksa1.jpg" class="card-img-top" alt="...">
+            <div class="card-body my-color-card-body">
+              <h5 class="card-title">Заголовок карточки</h5>
+              <p class="card-text">Небольшой пример текста, который должен основываться на названии карточки и составлять основную часть содержимого карты.</p>
+            </div>
+              <ul class="list-group list-group-flush border-0">
+                <li class="list-group-item my-color-card-body"><a href="./article.html" class="btn btn-dark">Детальнее</a></li>
+              </ul>
+                <div class="card-footer my-color-card-body">
+                  <small class="text-muted">Last updated 3 mins ago</small>
+                </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-5 mb-4 mx-3">
+        <div class="card h-100  shadow-sm">
+          <img src="./img/taksa2.jpg" class="card-img-top" alt="...">
+            <div class="card-body my-color-card-body">
+              <h5 class="card-title">Заголовок карточки</h5>
+              <p class="card-text">Небольшой пример текста, который должен основываться на названии карточки и составлять основную часть содержимого карты.</p>
+            </div>
+              <ul class="list-group list-group-flush border-0">
+                <li class="list-group-item my-color-card-body"><a href="./article.html" class="btn btn-dark">Детальнее</a></li>
+              </ul>
+                <div class="card-footer my-color-card-body">
+                  <small class="text-muted">Last updated 3 mins ago</small>
+                </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-5 mb-4 mx-3">
+        <div class="card h-100 shadow-sm">
+          <img src="./img/taksa3.jpg" class="card-img-top" alt="...">
+            <div class="card-body my-color-card-body">
+              <h5 class="card-title">Заголовок карточки</h5>
+              <p class="card-text">Небольшой пример текста, который должен основываться на названии карточки и составлять основную часть содержимого карты.</p>
+            </div>
+              <ul class="list-group list-group-flush border-0">
+                <li class="list-group-item my-color-card-body"><a href="./article.html" class="btn btn-dark">Детальнее</a></li>
+              </ul>
+                <div class="card-footer my-color-card-body">
+                  <small class="text-muted">Last updated 3 mins ago</small>
+                </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-5 mb-4 mx-3">
+        <div class="card h-100 shadow-sm">
+          <img src="./img/taksa8.jpg" class="card-img-top" alt="...">
+            <div class="card-body my-color-card-body">
+              <h5 class="card-title">Заголовок карточки</h5>
+              <p class="card-text">Небольшой пример текста, который должен основываться на названии карточки и составлять основную часть содержимого карты.</p>
+            </div>
+              <ul class="list-group list-group-flush border-0">
+                <li class="list-group-item my-color-card-body"><a href="./article.html" class="btn btn-dark">Детальнее</a></li>
+              </ul>
+                <div class="card-footer my-color-card-body">
+                  <small class="text-muted">Last updated 3 mins ago</small>
+                </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-5 mb-4 mx-3">
+        <div class="card h-100 shadow-sm">
+          <img src="./img/taksa5.jpg" class="card-img-top" alt="...">
+            <div class="card-body my-color-card-body">
+              <h5 class="card-title">Заголовок карточки</h5>
+              <p class="card-text">Небольшой пример текста, который должен основываться на названии карточки и составлять основную часть содержимого карты.</p>
+            </div>
+              <ul class="list-group list-group-flush border-0">
+                <li class="list-group-item my-color-card-body"><a href="./article.html" class="btn btn-dark">Детальнее</a></li>
+              </ul>
+                <div class="card-footer my-color-card-body">
+                  <small class="text-muted">Last updated 3 mins ago</small>
+                </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-5 mb-4 mx-3">
+        <div class="card h-100 shadow-sm">
+          <img src="./img/taksa6.jpg" class="card-img-top" alt="...">
+            <div class="card-body my-color-card-body">
+              <h5 class="card-title">Заголовок карточки</h5>
+              <p class="card-text">Небольшой пример текста, который должен основываться на названии карточки и составлять основную часть содержимого карты.</p>
+            </div>
+              <ul class="list-group list-group-flush border-0">
+                <li class="list-group-item my-color-card-body"><a href="./article.html" class="btn btn-dark">Детальнее</a></li>
+              </ul>
+                <div class="card-footer my-color-card-body">
+                  <small class="text-muted">Last updated 3 mins ago</small>
+                </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-5 mb-4 mx-3">
+        <div class="card h-100 shadow-sm">
+          <img src="./img/taksa7.jpg" class="card-img-top" alt="...">
+            <div class="card-body my-color-card-body">
+              <h5 class="card-title">Заголовок карточки</h5>
+              <p class="card-text">Небольшой пример текста, который должен основываться на названии карточки и составлять основную часть содержимого карты.</p>
+            </div>
+              <ul class="list-group list-group-flush border-0">
+                <li class="list-group-item my-color-card-body"><a href="./article.html" class="btn btn-dark">Детальнее</a></li>
+              </ul>
+                <div class="card-footer my-color-card-body">
+                  <small class="text-muted">Last updated 3 mins ago</small>
+                </div>
+        </div>
+      </div>
+        
+    </div> <!-- end div row -->
+  </div> <!-- end div container -->
+    {% endblock %}
+
+    {% block pagination %}
+    <!-- pagination block -->
+    <nav aria-label="Page-navigation">
+        <ul class="pagination mt-5 justify-content-center">
+          <li class="page-item"><a class="page-link my-link-pagination" href="#">Prev</a></li>
+          <li class="page-item"><a class="page-link my-link-pagination" href="#">1</a></li>
+          <li class="page-item"><a class="page-link my-link-pagination" href="#">2</a></li>
+          <li class="page-item"><a class="page-link my-link-pagination" href="#">3</a></li>
+          <li class="page-item"><a class="page-link my-link-pagination" href="#">Next</a></li>
+        </ul>
+    </nav>
+      {% endblock %}
+  
+      <!-- end pagination block -->
