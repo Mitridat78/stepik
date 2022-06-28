@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -15,7 +15,14 @@
         <nav class="navbar navbar-expand-lg navbar-white shadow-sm my-color">
             <div class="container">
                 <a class="navbar-brand" href="#"><img src="./img/logo2.jpg" style="width: 60px;" alt=""></a>
-                <ul class="navbar-nav flex-row mx-2 me-auto mb-2 mb-lg-0">
+                <form class="d-flex">
+                  <select class="border-0" style="background-color: rgb(250, 234, 209);" id="sel1">
+                    <option>UA</option>
+                    <option>EN</option>
+                    <option>RU</option>
+                  </select>
+                </form>
+                <ul class="navbar-nav flex-row me-auto mx-2 mb-2 mb-lg-0">
                     <li class="nav-item">
                         <a class="nav-link my-link-menu mx-3" aria-current="page" href="#">Главная</a>
                     </li>
@@ -23,14 +30,17 @@
                         <a class="nav-link my-link-menu" href="./contact.html">Контакты</a>
                     </li>
                 </ul>
+                
                 <button class="navbar-toggler navbar-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
                 </button>
+                 
                 <div class="collapse navbar-collapse nav flex-row justify-content-center justify-content-md-around" id="navbarSupportedContent"> 
                     <form class="d-flex ms-lg-auto mt-3 mt-lg-0 mb-3 mb-md-0 me-3">
                         <input class="form-control me-2" type="search" placeholder="Поиск" aria-label="Search">
                         <button class="btn btn-outline-success" type="submit">Найти</button>
                     </form>
+                    
                     <div class="mt-0 mt-md-3 mt-lg-0 ml-5">
                         <a href="./signin.html" class="btn btn-outline-dark mx-2">Вход</a>
                         <a href="./signup.html" class="btn btn-outline-dark">Регистрация</a>
@@ -43,6 +53,7 @@
 
     <!-- Carousel -->
     <div class="container">
+      <h1>Блог о таксах</h1>
       <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-indicators">
           <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -90,7 +101,7 @@
           <div class="card h-100 shadow-sm">
             <img src="./img/taksa1.jpg" class="card-img-top" alt="...">
               <div class="card-body my-color-card-body">
-                <h5 class="card-title">Заголовок карточки</h5>
+                <h3 class="card-title">Заголовок карточки</h3>
                 <p class="card-text">Небольшой пример текста, который должен основываться на названии карточки и составлять основную часть содержимого карты.</p>
               </div>
                 <ul class="list-group list-group-flush border-0">
@@ -106,7 +117,7 @@
           <div class="card h-100  shadow-sm">
             <img src="./img/taksa2.jpg" class="card-img-top" alt="...">
               <div class="card-body my-color-card-body">
-                <h5 class="card-title">Заголовок карточки</h5>
+                <h3 class="card-title">Заголовок карточки</h3>
                 <p class="card-text">Небольшой пример текста, который должен основываться на названии карточки и составлять основную часть содержимого карты.</p>
               </div>
                 <ul class="list-group list-group-flush border-0">
@@ -122,7 +133,7 @@
           <div class="card h-100 shadow-sm">
             <img src="./img/taksa3.jpg" class="card-img-top" alt="...">
               <div class="card-body my-color-card-body">
-                <h5 class="card-title">Заголовок карточки</h5>
+                <h3 class="card-title">Заголовок карточки</h3>
                 <p class="card-text">Небольшой пример текста, который должен основываться на названии карточки и составлять основную часть содержимого карты.</p>
               </div>
                 <ul class="list-group list-group-flush border-0">
@@ -138,7 +149,7 @@
           <div class="card h-100 shadow-sm">
             <img src="./img/taksa8.jpg" class="card-img-top" alt="...">
               <div class="card-body my-color-card-body">
-                <h5 class="card-title">Заголовок карточки</h5>
+                <h3 class="card-title">Заголовок карточки</h3>
                 <p class="card-text">Небольшой пример текста, который должен основываться на названии карточки и составлять основную часть содержимого карты.</p>
               </div>
                 <ul class="list-group list-group-flush border-0">
@@ -154,7 +165,7 @@
           <div class="card h-100 shadow-sm">
             <img src="./img/taksa5.jpg" class="card-img-top" alt="...">
               <div class="card-body my-color-card-body">
-                <h5 class="card-title">Заголовок карточки</h5>
+                <h3 class="card-title">Заголовок карточки</h3>
                 <p class="card-text">Небольшой пример текста, который должен основываться на названии карточки и составлять основную часть содержимого карты.</p>
               </div>
                 <ul class="list-group list-group-flush border-0">
@@ -170,7 +181,7 @@
           <div class="card h-100 shadow-sm">
             <img src="./img/taksa6.jpg" class="card-img-top" alt="...">
               <div class="card-body my-color-card-body">
-                <h5 class="card-title">Заголовок карточки</h5>
+                <h3 class="card-title">Заголовок карточки</h3>
                 <p class="card-text">Небольшой пример текста, который должен основываться на названии карточки и составлять основную часть содержимого карты.</p>
               </div>
                 <ul class="list-group list-group-flush border-0">
@@ -186,7 +197,7 @@
           <div class="card h-100 shadow-sm">
             <img src="./img/taksa7.jpg" class="card-img-top" alt="...">
               <div class="card-body my-color-card-body">
-                <h5 class="card-title">Заголовок карточки</h5>
+                <h3 class="card-title">Заголовок карточки</h3>
                 <p class="card-text">Небольшой пример текста, который должен основываться на названии карточки и составлять основную часть содержимого карты.</p>
               </div>
                 <ul class="list-group list-group-flush border-0">
@@ -216,7 +227,7 @@
 
     <footer class="my-footer text-center">
       <div class="container-fluid">
-        <span class="text-muted">Все о таксах</span>
+        <span class="text-muted">Блог - все о таксах. Все права защищены</span>
       </div>
     </footer>
     
