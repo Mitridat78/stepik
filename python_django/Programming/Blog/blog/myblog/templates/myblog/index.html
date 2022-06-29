@@ -8,8 +8,39 @@
 {% endblock %}
 
 {% block content %}
+<!--<div class="container bg-light">
+  {% for post in posts %}
+  <h2>{{ post.h1 }}</h2>
+  <p>{{ post.url }}</p>
+  {{ post.description|safe }}
+  <p>{{ post.image }}</p>
+  <p>{{ post.created_at }}</p>
+  <p>{{ post.author }}</p>
+  {% endfor %}
+-->
 <div class="container bg-light">
-    <div class="row my-3 justify-content-md-between justify-content-center">
+  <div class="row my-3 justify-content-md-between justify-content-center">
+    {% for post in posts %}
+    <div class="col-lg-3 col-md-5 mb-4 mx-3">
+      <div class="card h-100 shadow-sm">
+        <img src="media/{{ post.image }}" class="card-img-top" alt="...">
+          <div class="card-body my-color-card-body">
+            <h5 class="card-title">{{ post.h1 }}</h5>
+            <p class="card-text">{{ post.description|safe|truncatechars:100 }}</p>
+          </div>
+            <ul class="list-group list-group-flush border-0">
+              <li class="list-group-item my-color-card-body"><a href="{{ post.url }}" class="btn btn-dark">Детальнее</a></li>
+            </ul>
+              <div class="card-footer my-color-card-body">
+                <small class="text-muted">{{ post.created_at }}</small>
+              </div>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+
+  
+    <!--<div class="row my-3 justify-content-md-between justify-content-center">
       <div class="col-lg-3 col-md-5 mb-4 mx-3">
         <div class="card h-100 shadow-sm">
           <img src="{% static './img/taksa1.jpg' %}" class="card-img-top" alt="...">
@@ -122,7 +153,7 @@
         </div>
       </div>
         
-    </div> <!-- end div row -->
+    </div>  end div row -->
   </div> <!-- end div container -->
 {% endblock %}
 
